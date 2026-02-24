@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Timeline Hồ Chí Minh</title>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f4f6f9;
+}
+
+header{
+    background:#c62828;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:50px auto;
+}
+
+.timeline::after{
+    content:'';
+    position:absolute;
+    width:4px;
+    background:#c62828;
+    top:0;
+    bottom:0;
+    left:50%;
+}
+
+.container{
+    width:50%;
+    padding:20px 40px;
+    position:relative;
+}
+
+.left{left:0;}
+.right{left:50%;}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-6px) scale(1.03);
+}
+
+.card img{
+    width:100%;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+.year{
+    color:#c62828;
+    font-size:22px;
+    font-weight:bold;
+}
+
+a{text-decoration:none;color:inherit;}
+
+@media(max-width:768px){
+    .timeline::after{left:20px;}
+    .container{width:100%;padding-left:60px;}
+    .right{left:0;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Timeline Cuộc đời Hồ Chí Minh</h1>
+    <p>Click vào từng mốc để xem chi tiết</p>
+</header>
+
+<div class="timeline">
+
+<a href="1890.html">
+<div class="container left" data-aos="fade-up">
+    <div class="card">
+        <div class="year">1890</div>
+        <p>Sinh tại Nghệ An.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Ho_Chi_Minh_1890.jpg">
+    </div>
+</div>
+</a>
+
+<a href="1911.html">
+<div class="container right" data-aos="fade-up">
+    <div class="card">
+        <div class="year">1911</div>
+        <p>Ra đi tìm đường cứu nước.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Ben_Nha_Rong_1911.jpg">
+    </div>
+</div>
+</a>
+
+<a href="1945.html">
+<div class="container left" data-aos="fade-up">
+    <div class="card">
+        <div class="year">1945</div>
+        <p>Tuyên ngôn Độc lập.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Ba_Dinh_1945.jpg">
+    </div>
+</div>
+</a>
+
+<a href="1969.html">
+<div class="container right" data-aos="fade-up">
+    <div class="card">
+        <div class="year">1969</div>
+        <p>Người qua đời.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Ho_Chi_Minh_1969.jpg">
+    </div>
+</div>
+</a>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({duration:900});</script>
+
+</body>
+</html>
